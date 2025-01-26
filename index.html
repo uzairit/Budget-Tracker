@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div>
+        <h1>Budget</h1>
+        <input type="number" name="budget" id="budget" placeholder="Add Budget">
+        <button id="set">Set Budget</button>
+    </div>
+
+    <div>
+        <h1>Expenses</h1>
+        <input type="text" name="productName" id="productName" placeholder="Add Product Name">
+        <input type="number" name="productBudget" id="productCost" placeholder="Add Product Cost">
+        <button id="cAmount">Check Amount</button>
+    </div>
+
+    <table>
+        <tr>
+            <th>Total Budget</th>
+            <th>Expenses</th>
+            <th>Balance</th>
+        </tr>
+        <tr id="budget-table">
+        </tr>
+    </table>
+
+    <div>
+        <table id="product-table"></table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
